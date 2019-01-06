@@ -1,0 +1,64 @@
+ html {
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: 62.5%;
+   -ms-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+ }
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: inherit;
+ }
+
+ body {
+   background: #ffffff;
+   font-family: Helvetica, Arial, sans-serif;
+   font-size: $m-size;
+   margin: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: $darkGray;
+ }
+
+ .wrapper {
+   display: flex;
+   width: $calendarWidth;
+   flex-direction: column;
+   border: 1px solid $grayBorder;
+   border-radius: 3px;
+   padding: $s-size;
+ }
+
+ .hidden {
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility 0s linear 0.1s, opacity 0.1s linear;
+ }
+
+ button {
+   cursor: pointer;
+ }
+
+ button:disabled {
+   cursor: default;
+ }
+
+ .button__reservation {
+   margin-top: $xs-size;
+   background: $submit;
+   font-weight: bold;
+   color: $white;
+   border: 1px solid $submit;
+   border-radius: 4px;
+   padding: $xs-size;
+ }
+
+ @media screen and (min-width: 376px) {
+   .wrapper {
+     width: $largeCalendarWidth;
+   }
+ }

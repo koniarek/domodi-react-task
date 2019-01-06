@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should match Calendar snapshot. 1`] = `
+<div
+  className="calendar"
+>
+  <div
+    className="calendar__header"
+  >
+    <span>
+      Dates
+    </span>
+    <div
+      className="calendar__dates"
+    >
+      <button
+        className="calendar__dates__checkin calendar__dates__unassigned"
+        id="checkin"
+        onClick={[Function]}
+      >
+        Check In
+      </button>
+      <img
+        alt="date from - to separator"
+        className="calendar__dates__separator"
+        src="./images/right-arrow.png"
+      />
+      <button
+        className="calendar__dates__checkout calendar__dates__unassigned"
+        id="checkout"
+        onClick={[Function]}
+      >
+        Check Out
+      </button>
+    </div>
+  </div>
+  <div
+    className="calendar__picker hidden"
+    id="datePicker"
+  >
+    <svg
+      className="calendar__bubble"
+      focusable="false"
+      role="presentation"
+    >
+      <path
+        className="_whdw9f"
+        d="M0,10 20,10 10,0z"
+      />
+      <path
+        className="_c3dsty"
+        d="M0,10 10,0 20,10"
+      />
+    </svg>
+    <div
+      className="calendar__nav"
+    >
+      <button
+        className="calendar__arrow__button"
+        onClick={[Function]}
+      >
+        <img
+          alt="previous month"
+          className="calendar__arrow__left"
+          src="./images/left-arrow.png"
+        />
+      </button>
+      <div>
+        January 2019
+      </div>
+      <button
+        className="calendar__arrow__button"
+        onClick={[Function]}
+      >
+        <img
+          alt="next month"
+          className="calendar__arrow__right"
+          src="./images/right-arrow.png"
+        />
+      </button>
+    </div>
+    <Month
+      candidate={null}
+      current={
+        Object {
+          "month": 0,
+          "year": 2019,
+        }
+      }
+      from={null}
+      handleDeleteCandidate={[Function]}
+      handleSetCandidate={[Function]}
+      handleSetDay={[Function]}
+      naDays={Array []}
+      setSecondDate={false}
+      to={null}
+      unavailable={
+        Array [
+          "2018-11-01",
+          "2018-11-02",
+          "2018-11-14",
+          "2018-11-16",
+          "2018-11-20",
+          "2018-11-25",
+          "2018-11-26",
+          "2018-12-01",
+          "2018-12-02",
+          "2018-12-03",
+          "2018-12-15",
+          "2018-12-16",
+          "2018-12-17",
+          "2019-01-05",
+          "2019-01-06",
+          "2019-01-07",
+          "2019-01-08",
+          "2019-01-20",
+          "2019-01-21",
+          "2019-01-22",
+          "2019-01-26",
+          "2019-02-15",
+          "2019-02-16",
+          "2019-02-17",
+        ]
+      }
+    />
+    <SubscriptInfo
+      clearDates={[Function]}
+      lastModified={null}
+      lastUpdate={2}
+    />
+  </div>
+</div>
+`;

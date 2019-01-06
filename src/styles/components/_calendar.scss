@@ -1,0 +1,116 @@
+.calendar {
+  overflow: visible;
+  height: 80px;
+}
+
+.calendar__bubble {
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  z-index: 20;
+  width: $l-size;
+  height: $l-size;
+  color: rgb(117, 117, 117);
+}
+
+._c3dsty {
+  fill: rgba(0, 0, 0, 0);
+  stroke: rgb(235, 235, 235)
+}
+
+._whdw9f {
+  fill: rgb(255, 255, 255);
+}
+
+.calendar__header {
+  margin-top: $xxs-size;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar__dates {
+  font-size: $s-size;
+  margin-top: $xxs-size;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 1px solid $grayBorder;
+  border-radius: 3px;
+  padding: $xxs-size;
+}
+
+.calendar__dates__checkin,
+.calendar__dates__checkout {
+  border: none;
+  outline: none;
+  width: $dateInputWidth;
+  font-weight: 200;
+  color: $darkGray;
+  border-radius: $xxxs-size;
+  padding: $xxs-size;
+}
+
+.calendar__dates__active {
+  background: $activeDate;
+}
+
+.calendar__dates__unassigned {
+  color: $unassignedDate;
+}
+
+.calendar__dates__separator {
+  margin: 8px 0;
+  height: $ml-size;
+  width: auto;
+}
+
+.calendar__picker {
+  background: #fff;
+  margin-top: $xxs-size;
+  padding: $calendarPadding;
+  border: 1px solid $grayBorder;
+  border-radius: 3px;
+  position: relative !important;
+  z-index: 100;
+}
+
+.calendar__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  padding-bottom: $xxs-size;
+}
+
+.calendar__arrow__button {
+  border: 1px solid $grayArrow;
+  border-radius: 3px;
+  outline: none;
+  padding: 0;
+  height: $ml-size;
+  width: $l-size;
+}
+
+.calendar__arrow__button:hover {
+  border: 1px solid $gray;
+}
+
+.calendar__arrow__left {
+  height: 22px;
+  width: auto;
+}
+
+.calendar__arrow__right {
+  height: 22px;
+  width: auto;
+}
+
+@media screen and (min-width: 376px) {
+  .calendar__picker {
+    padding: $largeCalendarPadding;
+  }
+  .calendar__dates {
+    font-size: $m-size;
+  }
+}
